@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{97d42ee0-78d2-4903-88a0-b095bc5791e1}</ProjectGuid>
-    <RootNamespace>Class7thTypeConversion</RootNamespace>
+    <ProjectGuid>{70bc9e7b-7ec3-41f3-be9d-25097a64f033}</ProjectGuid>
+    <RootNamespace>Class8thPointer</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -128,9 +128,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Source.c" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="GameManager.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
