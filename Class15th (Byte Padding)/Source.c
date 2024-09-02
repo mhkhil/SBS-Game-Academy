@@ -70,25 +70,37 @@ int main()
 
 #pragma region UP - DOWN 게임
 	srand(time(NULL));
-	int selNum = 0;
-	int random = rand() % 50 + 1 ;
-	int Life = 5;
-	while (selNum == random)
+	int answer = 0;
+	int computer = rand() % 50 + 1 ;
+	int life = 5;
+	while (life > 0)
 	{
-		printf("값을 넣어주세요 : ");
-		scanf("%d", &selNum);
-		if (selNum >= random)
+		printf("Life : %d\n", life);
+		printf("Computer가 가지고 있는 값 : ");
+		scanf_s("%d", &answer);
+		if (answer == computer)
 		{
-			printf("life 1 감소");
-			printf("값이 큽니다. 더 낮추세요");
+			break;
 		}
-		else
+		else if (answer > computer)
 		{
-			printf("life 1 감소");
-			printf("값이 작습니다. 더 높이세요");
+			life--;
+			printf("computer가 가지고 있는 값보다 큽니다.\n");
+		}
+		else if (answer < computer)
+		{
+			life--;
+			printf("computer가 가지고 있는 값보다 작습니다.\n");
 		}
 	}
-	printf("정답입니다.");
+	if (life <= 0)
+	{
+		printf("Defeat\n");
+	}
+	else
+	{
+		printf("Victory\n");
+	}
 
 #pragma endregion
 
